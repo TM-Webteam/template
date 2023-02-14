@@ -1,0 +1,480 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <!-- アンカーリンク 3つ4つどちらも対応　-->
+  <section class="anc">
+    <div class="containers">
+      <ul class="flex jcC gap30 inherit anc__box">
+        <li><a href="#">サービス概要</a></li>
+        <li><a href="#">特長</a></li>
+        <li><a href="#">他カプセルとの比較</a></li>
+        <li><a href="#">用途例</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- 左に説明文・右に画像　-->
+  <section class="sec01">
+    <div class="containers">
+      <h2 class="ttl-secondary">h2タイトルfz36がそのまま入ります</h2>
+      <div class="lead">リード文が入ります。リード文が入ります。リード文が入ります。</div>
+      <div class="flex aiC sp-reverse">
+        <dl class="sec01__box">
+          <dt><h3>タイトルがそのまま入りますタイトルがそのまま入ります<br>タイトルがそのまま入ります</h3></dt>
+          <dd>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</dd>
+        </dl>
+        <figure class="sec01__img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- 左に画像・右に説明文　-->
+  <section class="sec02">
+    <div class="containers">
+      <h2 class="ttl-secondary">h2タイトルfz36がそのまま入ります</h2>
+      <div class="lead">リード文が入ります。リード文が入ります。リード文が入ります。</div>
+      <div class="flex aiC">
+        <figure class="sec02__img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+        <dl class="sec02__box">
+          <dt><h3>タイトルがそのまま入りますタイトルがそのまま入ります<br>タイトルがそのまま入ります</h3></dt>
+          <dd>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- 交互に見せる　-->
+  <section>
+    <div class="containers">
+
+      <div class="flex aiC sp-reverse alternate">
+        <summary class="alternate__box">
+          <div class="alternate__box--num">01</div>
+          <h2 class="alternate__box--ttl">タイトルがそのまま入ります<br>タイトルがそのまま入ります</h2>
+          <div class="alternate__box--txt">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</div>
+          <a href="#" class="btn01">ボタン名が入ります</a>
+        </summary>
+        <figure class="alternate__img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+      </div>
+
+      <div class="flex aiC alternate">
+        <figure class="alternate__img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+        <summary class="alternate__box">
+          <div class="alternate__box--num">02</div>
+          <h2 class="alternate__box--ttl">タイトルがそのまま入ります<br>タイトルがそのまま入ります</h2>
+          <div class="alternate__box--txt">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</div>
+          <a href="#" class="btn01">ボタン名が入ります</a>
+        </summary>
+      </div>
+
+      <div class="flex aiC sp-reverse alternate">
+        <summary class="alternate__box">
+          <div class="alternate__box--num">03</div>
+          <h2 class="alternate__box--ttl">タイトルがそのまま入ります<br>タイトルがそのまま入ります</h2>
+          <div class="alternate__box--txt">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</div>
+        </summary>
+        <figure class="alternate__img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+      </div>
+      
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- 企業ロゴ・スライダーなしの場合　-->
+  <section class="praise">
+    <div class="containers">
+      <h2 class="ttl-secondary">h2タイトルfz36がそのまま入ります</h2>
+      <ul class="flex praise__box">
+        <li><img src="/assets/img/common/logo.svg" alt=""></li>
+        <li><img src="/assets/img/common/logo.svg" alt=""></li>
+        <li><img src="/assets/img/common/logo.svg" alt=""></li>
+        <li><img src="/assets/img/common/logo.svg" alt=""></li>
+        <li><img src="/assets/img/common/logo.svg" alt=""></li>
+        <li><img src="/assets/img/common/logo.svg" alt=""></li>
+      </ul>
+      <a href="#" class="btn01">ボタン名が入ります</a>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- お客様の声 -->
+  <section class="voice">
+    <div class="containers">
+      <h2 class="ttl-secondary">お客様の声</h2>
+
+      <div class="flex aiE voice__box">
+        <figure class="voice__box--img">
+          <img src="/assets/img/common/img-voice.jpg" alt="" class="avatar">
+          <figcaption class="position">〇〇業　〇〇部門担当者</figcaption>
+          <span class="tag">導入事例 01</span>
+        </figure>
+        <dl class="voice__box--cmt">
+          <dt>他社には無い機能性表示食品の商品開発が実現できました</dt>
+          <dd>お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。</dd>
+        </dl>
+      </div>
+
+      <div class="flex aiE sp-reverse voice__box">
+        <dl class="voice__box--cmt v2">
+          <dt>他社には無い機能性表示食品の商品開発が実現できました</dt>
+          <dd>お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。</dd>
+        </dl>
+        <figure class="voice__box--img">
+          <img src="/assets/img/common/img-voice.jpg" alt="" class="avatar">
+          <figcaption class="position">〇〇業　〇〇部門担当者</figcaption>
+          <span class="tag">導入事例 01</span>
+        </figure>
+      </div>
+      
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- お問合わせ　-->
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">タイトルがそのまま入ります</h2>
+      <h3 class="lead">リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+      <a href="/contact/" class="btn01">お問合せ・ご相談はこちら</a>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">テキストが入りますテキストが入ります</div>
+        <div class="flex inquiry__box--btn">
+          <a href="#" class="btn01">ボタン名</a>
+          <a href="#" class="btn01">ボタン名</a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- お問合わせ　type02-->
+  <section class="inquiry02">
+    <div class="containers">
+      <div class="inquiry02__box">
+        <h2 class="inquiry02__box--ttl">ご相談・お問い合わせ</h2>
+        <div class="inquiry02__box--lead">セキュリティ担当者様の業務課題に関する<br>ご相談・お問い合わせはお気軽に<br class="sp-only">ご連絡下さい。</div>
+        <a href="#" class="btn01">ご相談・お問い合わせ</a>
+        <a href="tel:0332668128" class="tel">03-3266-8128</a>
+        <div class="inquiry02__box--txt">（平日09:00〜17:00）</div>
+        <h3 class="inquiry02__box--subttl"><span>カタログやお役立ち資料を<br class="sp-only">ご希望の方はこちら</span></h3>
+        <div class="flex">
+          <a href="#" class="btn01 small">カタログ</a>
+          <a href="#" class="btn01 small">ホワイトペーパ</a>
+          <a href="#" class="btn01 small">事例資料</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- お問合わせ　type03-->
+  <section class="inquiry03">
+    <div class="containers-full">
+      <div class="flex">
+        <a href="#" class="item">
+          <div class="item__box left">
+            <figure class="item__box--img"><img src="/assets/img/common/icon-dl.png" alt=""></figure>
+            <div class="item__box--txt"><span>サービス資料ダウンロード</span></div>
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="item__box right">
+            <figure class="item__box--img"><img src="/assets/img/common/icon-mail.png" alt=""></figure>
+            <div class="item__box--txt"><span>ご相談・お見積り</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- ホワイトペーパー　※CMS対応 -->
+  <section class="sec-wp">
+    <div class="containers">
+      <div class="flex aiC jcC gap30 desc">
+        <figure class="desc__img"><img src="/assets/img/common/img-wp.png" alt=""></figure>
+        <summary class="desc__box">
+          <div class="desc__box--ttl">差別化をサポートする<br>森下仁丹のサービス資料</div>
+          <a href="/whitepaper/" class="btn01">サービス資料をダウンロード</a>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- ニュース　※CMS対応 -->
+  <section class="sec-news">
+    <div class="containers">
+      <h2 class="ttl-secondary">お知らせ</h2>
+
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+      
+      <a href="/news/" class="btn01">お知らせ一覧を見る</a>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- カード型 type1 ※aタグに変更も可能-->
+  <section class="card-type1">
+    <div class="containers">
+      <h2 class="ttl-secondary">タイトルがそのまま入ります</h2>
+      <ul class="flex gap30 card">
+        <li class="card__box">
+          <h3 class="card__box--ttl">タイトル</h3>
+          <figure class="card__box--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+          <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl">タイトル</h3>
+          <figure class="card__box--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+          <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl">タイトル</h3>
+          <figure class="card__box--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+          <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+        </li>
+      </ul>
+      <a href="#" class="btn01">ボタン名が入ります</a>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- カード型 type2 ※aタグに変更も可能-->
+  <section class="card-type2">
+    <div class="containers">
+      <h2 class="ttl-secondary">タイトルがそのまま入ります</h2>
+      <ul class="flex gap30 card">
+        <li class="card__wrap">
+          <h3 class="card__wrap--ttl">タイトル</h3>
+          <summary class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+            <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+          </summary>
+        </li>
+        <li class="card__wrap">
+          <h3 class="card__wrap--ttl">タイトル</h3>
+          <summary class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+            <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+          </summary>
+        </li>
+        <li class="card__wrap">
+          <h3 class="card__wrap--ttl">タイトル</h3>
+          <summary class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+            <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+          </summary>
+        </li>
+      </ul>
+      <a href="#" class="btn01">ボタン名が入ります</a>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- カード型 type3 ※ulタグに変更も可能-->
+  <section class="card-type3">
+    <div class="containers">
+      <h2 class="ttl-secondary">タイトルがそのまま入ります</h2>
+      <div class="flex gap30 card">
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">タイトル</h3>
+            <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+          </summary>
+        </a>
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">タイトル</h3>
+            <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+          </summary>
+        </a>
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">タイトル</h3>
+            <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+          </summary>
+        </a>
+      </div>
+      <a href="#" class="btn01">ボタン名が入ります</a>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- カード型 type4 -->
+  <section class="card-type4">
+    <div class="containers">
+
+      <div class="card">
+        <h2 class="card__ttl">「<span>差別化のネタが見つからない</span>」<br class="sp-only">という企業様へ</h2>
+        <div class="flex gap30 sp-reverse card__box">
+          <dl class="card__box--txt">
+            <dt><h3>独自の原料素材とシームレスカプセル技術で<br>差別化できる商品開発をサポート</h3></dt>
+            <dd>多くの自社商品を開発・製造してきた森下仁丹ならではのノウハウを活用し、商品設計や機能性原料の供給、シームレスカプセルでの製造、充填、包装まで一気通貫でサポート。商品に付加価値をつけ、競合他社との差別化ができるネタをご提供します。</dd>
+          </dl>
+          <figure class="card__box--img"><img src="/assets/img/common/img01.jpg" alt=""></figure>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- hero01 右側にwp-->
+  <section class="hero01">
+    <div class="containers flex gap30 aiC">
+      <div class="hero01__box">
+        <div class="hero01__box--sub">サブタイトルが入ります</div>
+        <h1 class="ttl-primary">h1タイトルがそのまま入ります<br>h1タイトルがそのまま入ります</h1>
+        <a href="#" class="btn01">ボタン名が入ります</a>
+      </div>
+      <a href="#" class="hero01__wp">
+        <div class="hero01__wp--ttl">お役立ち資料</div>
+        <div class="hero01__wp--txt">テキストが入ります</div>
+        <figure class="hero01__wp--img"><img src="/assets/img/common/img-wp.png" alt=""></figure>
+        <div class="btn01">資料ダウンロード</div>
+      </a>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- hero02 左寄せ-->
+  <section class="hero02">
+    <div class="containers">
+      <div class="hero02__box">
+        <div class="hero02__box--sub">サブタイトルが入ります</div>
+        <h1 class="ttl-primary">h1タイトルがそのまま入ります<br>h1タイトルがそのまま入ります</h1>
+        <a href="#" class="btn01">ボタン名が入ります</a>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <!-- hero03 中央寄せ-->
+  <section class="hero03">
+    <div class="containers core">
+      <div class="hero03__box">
+        <div class="hero03__box--sub">サブタイトルが入ります</div>
+        <h1 class="ttl-primary">h1タイトルがそのまま入ります<br>h1タイトルがそのまま入ります</h1>
+        <a href="#" class="btn01">ボタン名が入ります</a>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <hr style="margin: 30px 0; display: block;">
+
+  <hr style="margin: 30px 0; display: block;">
+
+</main>
+
+<!-- コラム詳細ページ -->
+<main>
+
+  <section class="">
+    <div class="containers flex">
+
+      <!-- 投稿記事詳細 -->
+      <article class="main-conts">
+
+      </article>
+
+      <!-- サイドメニュー -->
+      <aside class="side-nav">
+
+      </aside>
+      
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

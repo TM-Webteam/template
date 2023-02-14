@@ -1,0 +1,125 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+  <div class="ttl-primary" style="padding: 15px; background: #ddd;">共通パーツ一覧</div>
+
+  <section>
+    <div class="containers">
+
+      <!-- h1タイトル -->
+      <h1 class="ttl-primary">h1タイトルfz40</h1>
+
+      <!-- h2タイトル -->
+      <h2 class="ttl-secondary">h2タイトルfz36</h2>
+
+      <!-- h3タイトル -->
+      <h3 class="ttl-tertiary">h3タイトルfz20</h3>
+
+      <!-- リード文（h2の下） -->
+      <div class="lead">リード文が入ります。リード文が入ります。リード文が入ります。</div>
+
+      <!-- 注釈文 -->
+      <div class="note">※注釈文文が入ります。注釈文文が入ります。</div>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- ボタン -->
+      <a href="#" class="btn01">タイプ01</a>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- 呼びかけボタン -->
+      <div class="speech"><span>吹き出しコメント</span></div>
+      <a href="#" class="btn01">タイプ01</a>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- 吹き出し付きボタン -->
+      <div class="ctabtn">
+        <div class="balloon"><span class="balloon__txt">差別化をサポートする森下仁丹のサービス資料</span></div>
+        <a href="#" class="btn01">サービス資料ダウンロード</a>
+        <summary class="tooltip">お申込み後、リアルタイムでお送りいたします！</summary>
+      </div>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- サムネ付きボタン -->
+      <a href="#" class="btn01 thumb">タイプ01</a>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- カテゴリ -->
+      <span class="cat">カテゴリ</span>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- 日付 -->
+      <time class="time">2021.03.16</time>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- マーカーライン -->
+      <span class="marker">マーカーテキストが入ります</span>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- 強調打点 -->
+      <ruby>強<rt>・</rt>調<rt>・</rt>打<rt>・</rt>点<rt>・</rt></ruby>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- 検索 -->
+      <div class="search">
+        <form action="" class="search__form">
+          <input class="search__input" type="search" placeholder="キーワードから探す">
+          <button class="search__btn" type="submit"><img src="/assets/img/common/icon-search.svg"></button>
+        </form>
+      </div>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- 吹き出し（ボタン等） -->
+      <div class="speech"><span>吹き出しコメント</span></div>
+
+      <hr style="margin: 30px 0; display: block;">
+
+      <!-- 企業ロゴループスライダー 　※containers-fullで画面いっぱい-->
+      <ul id="loop-slick">
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+        <li><img src="/assets/img/common/img-loop01.png" alt=""></li>
+      </ul>
+
+      <hr style="margin: 30px 0; display: block;">
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}
