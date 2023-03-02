@@ -129,16 +129,15 @@ $(document).ready(function() {
 
 
 //--------------------------------------
-//　E-004 slick01
+//　wp-slick
 //--------------------------------------
 
 $(document).ready(function() {
-  $('#slick02').slick({
-    arrows: false,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+  $('#wp-slick').slick({
+    arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   });
 });
 

@@ -229,3 +229,41 @@
     background: #999;
   }
 }
+
+.side-form {
+  .form {
+    &__table {
+      padding: 15px;
+      col {
+        &:first-child {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+      }
+      tr {
+        th,td {
+          display: block;
+        }
+        th {
+          padding-right: 0;
+        }
+        td {
+          padding: 0 0 15px;
+          textarea,
+          input[type="text"],
+          input[type="email"],
+          input[type="url"],
+          input[type="tel"],
+          input[type="checkbox"] {
+            margin: 0;
+          }
+        }
+      }
+      .btn01.small {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -129,69 +129,72 @@
 }
 
 // 交互に見せる
-.alternate {
-  &:not(:last-child) {
-    margin-bottom: 50px;
-    @media #{$sp} {
-      margin-bottom: 30px;
-    }
-  }
-  &__box {
-    width: calc(100% / 2 - 20px);
-    @media #{$sp} {
-      width: 100%;
-    }
-    &--num {
-      font-family: din-2014, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 76px;
-      line-height: 1;
-      margin-bottom: 15px;
+.symmetry {
+  .item {
+    &:not(:last-child) {
+      margin-bottom: 50px;
       @media #{$sp} {
-        font-size: 30px;
-        margin-bottom: 10px;
-        text-align: center;
+        margin-bottom: 30px;
       }
     }
-    &--ttl {
-      font-size: 22px;
-      font-weight: bold;
-      line-height: 1.5;
-      margin-bottom: 30px;
+    &__box {
+      width: calc(100% / 2 - 20px);
       @media #{$sp} {
+        width: 100%;
+      }
+      &--num {
+        font-family: din-2014, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 76px;
+        line-height: 1;
+        margin-bottom: 15px;
+        @media #{$sp} {
+          font-size: 30px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+      &--ttl {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      &--txt {
+        line-height: 1.875;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .btn01 {
+        margin: 0;
+        max-width: 380px;
         font-size: 16px;
+        padding: 15px;
+        @media #{$sp} {
+          margin: 0 auto;
+          max-width: 85%;
+          font-size: 12px;
+          padding: 10px;
+        }
+      }
+    }
+    &__img {
+      width: calc(100% / 2 - 20px);
+      @media #{$sp} {
+        width: 100%;
         margin-bottom: 15px;
       }
-    }
-    &--txt {
-      line-height: 1.875;
-      margin-bottom: 30px;
-      @media #{$sp} {
-        margin-bottom: 15px;
-      }
-    }
-    .btn01 {
-      margin: 0;
-      max-width: 380px;
-      font-size: 16px;
-      padding: 15px;
-      @media #{$sp} {
-        margin: 0 auto;
-        max-width: 85%;
-        font-size: 12px;
-        padding: 10px;
-      }
-    }
-  }
-  &__img {
-    width: calc(100% / 2 - 20px);
-    @media #{$sp} {
-      width: 100%;
-      margin-bottom: 15px;
     }
   }
 }
+
 
 // 企業ロゴ・スライダーなしの場合
 .praise {
@@ -512,7 +515,7 @@
 }
 
 // ホワイトペーパー　※CMS対応
-.sec-wp {
+.material {
   background: #0D5BAB;
   color: #fff;
   .desc {
@@ -815,6 +818,127 @@
   }
 }
 
+// カード型 type5
+.card-type5 {
+  background: #f7f7f7; //仮
+  .card {
+    margin-bottom: 60px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+    &__box {
+      background: #fff;
+      text-align: center;
+      width: calc(100% / 3 - 20px);
+      @media #{$sp} {
+        padding: 15px;
+        width: 100%;
+      }
+      &--img {
+        
+      }
+      &--ttl {
+        padding: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        @media #{$sp} {
+          padding: 15px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// お役立ち資料
+.useful-wp {
+  background: url("../img/top/bg-wp.webp") 50% / cover no-repeat;
+  .card {
+    display: block;
+    width: calc(100% / 2 - 20px);
+    background: #fff;
+    @media #{$sp} {
+      width: 100%;
+    }
+    &__img {
+      background: #F6F6F6;
+      text-align: center;
+      padding: 30px;
+      margin-bottom: 0;
+      @media #{$sp} {
+        padding: 15px;
+      }
+      img {
+        max-width: none;
+        width: auto;
+        height: 220px;
+        transition: all .3s;
+        @media #{$sp} {
+          height: 150px;
+        }
+      }
+    }
+    &__box {
+      background: #fff;
+      padding: 30px;
+      @media #{$sp} {
+        padding: 15px;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      &--txt {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        font-size: 16px;
+        transition: all .3s;
+        @media #{$sp} {
+          font-size: 14px;
+        }
+      }
+    }
+    &:hover {
+      opacity: 1;
+      .more.bgY {
+        background: #fff;
+        color: #F7A307;
+        border: 3px solid #F7A307;
+        &::before {
+          border-top: solid 3px #F7A307;
+          border-right: solid 3px #F7A307;
+        }
+      }
+      .card__img img {
+        transform:scale(1.1,1.1);
+      }
+    }
+  }
+  .flex.gap30 {
+    margin-bottom: 70px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 // hero01 右側にwp
 .hero01 {
   background: url("../img/common/bg-hero.webp") 50% / cover no-repeat;
@@ -922,6 +1046,61 @@
       margin: 0;
       @media #{$sp} {
         margin: 0 auto;
+      }
+    }
+  }
+}
+
+// 多くの企業様に選ばれています。
+.reason02 {
+  background: #F8F8F8;
+  .item {
+    margin-bottom: 40px;
+    @media #{$sp} {
+      margin-bottom: 20px;
+    }
+    &__box {
+      width: calc(100% / 3);
+      text-align: center;
+      position: relative;
+      font-size: 22px;
+      font-weight: bold;
+      @media #{$sp} {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+      }
+      &:not(:last-child) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 1px;
+          height: 100px;
+          background: #CBCBCB;
+          @media #{$sp} {
+            top: auto;
+            left: 0;
+            width: 100px;
+            height: 1px;
+          }
+        }
+      }
+      &--ttl {
+        
+      }
+      &--txt {
+        color: #1C83D1;
+        span {
+          font-size: 92px;
+          font-family:"din-2014";
+          @media #{$sp} {
+            font-size: 36px;
+          }
+        }
       }
     }
   }

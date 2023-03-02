@@ -109,6 +109,34 @@
       }
     }
   }
+  // 小さいボタン
+  &.small {
+    max-width: 330px;
+    padding: 10px;
+    &:before {
+      width: 6px;
+      height: 6px;
+      border-top: solid 2px #fff;
+      border-right: solid 2px #fff;
+    }
+    &:hover {
+      &::before {
+        border-top: solid 2px #F7A307;
+        border-right: solid 2px #F7A307;
+      }
+    }
+  }
+  // 最小ボタン
+  &.tiny {
+    font-size: 13px;
+    width: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.16);
+    &:before {
+      content: none;
+    }
+  }
 }
 
 // 吹き出し付きボタン
